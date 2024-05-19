@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sākumlapa</a></li>
+                <li><a href="listings.html">Sludinājumu saraksts</a></li>
+                <li><a href="js.html">JavaScript</a></li>
+                <li><a href="contact.html">Kontaktinformācijas lapa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>JavaScript</h1>
+
+            <label for="skaitlis1">Skaitlis 1:</label>
+            <input type="number" id="skaitlis1" name="skaitlis1" required><br>
+
+            <label for="skaitlis2">Skaitlis 2:</label>
+            <input type="number" id="skaitlis2" name="skaitlis2" required><br>
+
+            <label for="darbība">Darbība:</label>
+            <select id="darbība" name="darbība" required>
+                <option value="+">Saskaitīšana</option>
+                <option value="-">Atņemšana</option>
+                <option value="*">Reizināšana</option>
+                <option value="/">Dalīšana</option>
+            </select><br>
+
+            <button type="button" onclick="aprekini()">Aprēķināt</button>
+
+            <p id="rezultāts"></p>
+            </br>
+
+
+                <label for="figūrasTips">Figūras tips:</label>
+                <select id="figūrasTips" name="figūrasTips">
+                    <option value="aplis">Aplis</option>
+                    <option value="kvadrāts">Kvadrāts</option>
+                    <option value="taisnstūris">Taisnstūris</option>
+                </select><br>
+
+                <label for="x">X koordināte:</label>
+                <input type="number" id="x" name="x" required><br>
+
+                <label for="y">Y koordināte:</label>
+                <input type="number" id="y" name="y" required><br>
+
+                <label for="r">Rādiuss (aplim) vai platums (kvadrātam/taisnstūrim):</label>
+                <input type="number" id="r" name="r" required><br>
+
+                <label for="augstums">Augstums (taisnstūrim):</label>
+                <input type="number" id="augstums" name="augstums"><br>
+
+                <button type="button" onclick="canva()">Uzzīmēt</button>
+
+            <canvas id="Virsma" width="400" height="300"></canvas>
+
+
+            <table>
+                <thead>
+                  <tr>
+                    <th>Kategorija</th>
+                    <th>Apraksts</th>
+                    <th>Cena</th>
+                    <th>Attēls</th>
+                    <th>Saite</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Transports</td>
+                    <td>2.0d Manuāls, ādas sēdekļi ar apsildi, parkošanās sensori, klimatkontrole, kruīzkontrole, lietie diski.</td>
+                    <td>€3 995</td>
+                    <td><img src="https://i.ss.com/hd-image/?img=wVVW7C6I6mp5MVqR71keqmZ5BRFHIOVGRnOaLxKSUfPl2czkCnlJ7jXsE%252FBlel9A&key=I1YQIfmtfHrkkx3LsaXubsd8%252FCKyZwid9gVoQMJUw1RH%252FE8sjxr7lcNO5KGWbw31xhFs25rci%252BDMGxa1GfMevnYMtipz7KU1V1GuHWJ4foQj9dh%252FMaiGk%252FrytyooEF%252By" alt="Image"></td>
+                    <td><a href="https://www.ss.com/msg/lv/transport/cars/alfa-romeo/giulietta/bmccnp.html">Skatīt</a></td>
+                  </tr>
+                  <tr>
+                    <td>Māja</td>
+                    <td>Tiek pārdots divistabu dzīvoklis ar malkas apkuri, iekšā ir labierīcības, vanna un ūdens, zemi komunālie maksājumi, nepieciešams remonts. Papildus pieejams šķūnis malkai un papildus slēdzama sadzīves ēka. Atrodas Baldones lauku teritorija, Indrāni 3, 7 km no Baldones centra, no Rīgas 43km. Sīkāka informācija privāti. ss.com</td>
+                    <td>€19 000 </td>
+                    <td><img src="https://i.ss.com/gallery/7/1219/304685/real-estate-flats-other-60936832.800.jpg" alt="Image"></td>
+                    <td><a href="https://www.ss.com/msg/lv/real-estate/flats/other/edmhh.html">Skatīt</a></td>
+                  </tr>
+                  </tbody>
+              </table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
